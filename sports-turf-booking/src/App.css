@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #1a1a2e;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.header nav a {
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.header nav a:hover {
+  background: #1d4ed8;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+  padding: 60px 0 72px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-text {
+  flex: 1;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: #60a5fa;
+}
+
+.hero-text > p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+.features {
+  list-style: none;
+}
+
+.features li {
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+.hero-form {
+  flex-shrink: 0;
+}
+
+/* Turfs Section */
+.turfs-section {
+  padding: 60px 0;
+}
+
+.turfs-section h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 36px;
+  color: #1a1a2e;
+}
+
+.turfs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.turf-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.turf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.turf-icon {
+  font-size: 2.25rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.turf-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #1a1a2e;
+}
+
+.turf-card p {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Footer */
+.footer {
+  background: #1a1a2e;
+  color: #9ca3af;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .features {
+    display: inline-block;
+    text-align: left;
+  }
+}
